@@ -557,22 +557,6 @@ var Layout = function () {
     };
     //* END:CORE HANDLERS *//
 
-    // Handles custom checkboxes & radios using jQuery Uniform plugin
-    var handleUniform = function() {
-        if (!$().uniform) {
-            return;
-        }
-        var test = $("input[type=checkbox]:not(.toggle, .md-check, .md-radiobtn, .make-switch, .icheck), input[type=radio]:not(.toggle, .md-check, .md-radiobtn, .star, .make-switch, .icheck)");
-        if (test.size() > 0) {
-            test.each(function() {
-                if ($(this).parents(".checker").size() === 0) {
-                    $(this).show();
-                    $(this).uniform();
-                }
-            });
-        }
-    };
-
     return {
         // Main init methods to initialize the layout
         //IMPORTANT!!!: Do not modify the core handlers call order.
@@ -601,8 +585,6 @@ var Layout = function () {
         initContent: function () {
             handle100HeightContent(); // handles 100% height elements(block, portlet, etc)
             handleTabs(); // handle bootstrah tabs
-
-            handleUniform();
 
             App.addResizeHandler(handleSidebarAndContentHeight); // recalculate sidebar & content height on window resize
             App.addResizeHandler(handle100HeightContent); // reinitialize content height on window resize 

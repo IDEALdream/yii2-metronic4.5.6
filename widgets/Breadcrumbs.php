@@ -12,6 +12,11 @@ use Yii;
 use yii\helpers\Html;
 use yii\widgets\Breadcrumbs as BaseBreadcrumbs;
 
+/**
+ * todo 面包屑
+ * Class Breadcrumbs
+ * @package zongpeilei\metronic\widgets
+ */
 class Breadcrumbs extends BaseBreadcrumbs
 {
     public $options = ['class' => 'page-breadcrumb'];
