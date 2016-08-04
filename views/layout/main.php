@@ -76,6 +76,9 @@ $mainAsset = MainAsset::register($this);
                         'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
                     ]) ?>
                 </div>
+                <h3 class="page-title">
+                    <small></small>
+                </h3>
                 <div class="row">
                     <?= $content; ?>
                 </div>
