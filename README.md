@@ -1,6 +1,6 @@
 AdminTpl
 ========
-A yii2's adminTpl based on Metronic4.5.6.
+A Yii2's adminTpl based on Metronic4.5.6.
 
 Installation
 ------------
