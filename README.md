@@ -24,5 +24,3 @@ to the require section of your `composer.json` file.
 
 Usage
 -----
-
-待开发...
